@@ -22,7 +22,26 @@
 
     <script>
         function result() {
-            alert("Hello");
+            //alert("Hello");
+            let c = document.myForm.c.value;
+            console.log(c);
+            let java = document.myForm.java.value;
+            console.log(java);
+            let js = document.myForm.js.value;
+            console.log(js);
+
+            // && and
+            // || or
+            // ! not
+            if (c >= 50 && java >= 50 && js >= 50) {
+                if (c > 80 || java > 80 || js > 80) {
+                    document.write("<h1>This student's passed with Distinction Mark!</h1>");
+                } else {
+                    document.write("<h1>This student's Passed!</h1>");
+                }
+            } else {
+                document.write("<h1>This student's Failed!</h1>");
+            }
         }
     </script>
 </body>

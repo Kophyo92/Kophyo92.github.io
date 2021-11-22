@@ -43,12 +43,60 @@
                 document.write("<h1>This student's Failed!</h1>");
             } */
 
-            if (c < 50 || java < 50 || js < 50) {
+            /*if (c < 50 || java < 50 || js < 50) {
                 document.write("<h1>This student's Failed!</h1>");
             } else if (c > 80 || java > 80 || js > 80) {
                 document.write("<h1>This student's passed with Distinction Mark!</h1>");
             } else {
                 document.write("<h1>This student's Passed!</h1>");
+            } */
+
+            if (c >= 50 && java >= 50 && js >= 50) {
+                if (c > 80 && java > 80 && js > 80) {
+                    document.write("<h1>This student's passed with Distinction Mark in All Programming Languages!</h1>");
+                    document.write(`<h1>Turbo C = ${c} Mark</h1>`);
+                    document.write(`<h1>Java = ${java} Mark</h1>`);
+                    document.write(`<h1>JavaScript = ${js} Mark</h1>`);
+
+                } else if (c > 80 || java > 80 || js > 80) {
+                    if (c > 80) {
+                        document.write("<h1>This student's passed with Distinction Mark in Turbo C Programming Language!</h1>");
+                        document.write(`<h1>Turbo C = ${c} Mark</h1>`);
+                    }
+                    if (java > 80) {
+                        document.write("<h1>This student's passed with Distinction Mark in Java Programming Language!</h1>");
+                        document.write(`<h1>Java = ${java} Mark</h1>`);
+                    }
+                    if (js > 80) {
+                        document.write("<h1>This student's passed with Distinction Mark in JavaScript Programming Language!</h1>");
+                        document.write(`<h1>JavaScript = ${js} Mark</h1>`);
+                    }
+                } else {
+                    document.write("<h1>This student's Passed in All Programming Languages!</h1>");
+                    document.write(`<h1>Turbo C = ${c} Mark</h1>`);
+                    document.write(`<h1>Java = ${java} Mark</h1>`);
+                    document.write(`<h1>JavaScript = ${js} Mark</h1>`);
+                }
+            } else {
+                if (c < 50 && java < 50 && js < 50) {
+                    document.write("<h1>This student's Failed in All Programming Languages!</h1>");
+                    document.write(`<h1>Turbo C = ${c} Mark</h1>`);
+                    document.write(`<h1>Java = ${java} Mark</h1>`);
+                    document.write(`<h1>JavaScript = ${js} Mark</h1>`);
+                } else {
+                    if (c < 50) {
+                        document.write("<h1>This student's Failed in Turbo C Programming Language!</h1>");
+                        document.write(`<h1>Turbo C = ${c} Mark</h1>`);
+                    }
+                    if (java < 50) {
+                        document.write("<h1>This student's Failed in Java Programming Language!</h1>");
+                        document.write(`<h1>Java = ${java} Mark</h1>`);
+                    }
+                    if (js < 50) {
+                        document.write("<h1>This student's Failed in JavaScript Programming Language!</h1>");
+                        document.write(`<h1>JavaScript = ${js} Mark</h1>`);
+                    }
+                }
             }
         }
     </script>

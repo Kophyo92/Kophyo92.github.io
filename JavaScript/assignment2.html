@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div align="center">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="text" id="age"></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <button onclick="add_data()">Save</button>
+        <br><br>
+        <table border="1" cellspacing="0" cellpadding="20">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <script>
+        let i = 1;
+
+        function add_data() {
+
+            let data = [{
+
+                name: document.getElementById('name').value,
+                age: document.getElementById('age').value
+            }];
+            let tbody = document.querySelector('#tbody');
+            let tbody_data = document.createElement('tr');
+
+
+
+
+
+            let myData = '';
+
+
+            for (let row of data) {
+                myData = `
+                        <td>${i++}</td>
+                        <td>${row.name}</td>
+                        <td>${row.age}</td>`
+            };
+            tbody_data.innerHTML = myData;
+            tbody.appendChild(tbody_data);
+
+
+
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

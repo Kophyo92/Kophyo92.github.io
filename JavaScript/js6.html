@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Function
+
+        function funName() {
+            document.write("<h3>Hello Function</h3>");
+        }
+        funName();
+
+        function result(num1, num2) {
+            let res = num1 + num2;
+            document.write(`<h3>${res}</h3>`);
+        }
+
+        // default parameter--show when no input
+        function subResult(num1 = 5, num2 = 3) {
+            let sub_res = num1 - num2;
+            document.write(`<h3>${sub_res}</h3>`);
+        }
+
+
+
+        result(34, 35);
+        subResult();
+
+
+        // parseInt--- change string to number
+        let number1 = parseInt(prompt("Enter a Number One"));
+        let number2 = parseInt(prompt("Enter a Number Two"));
+        console.log(number1, number2);
+        result(number1, number2);
+        subResult(number1, number2);
+
+        // Object
+        let laptop = {
+            brand: 'Apple',
+            type: 'M1',
+            price: 2700000
+        }
+        console.log(laptop);
+        console.log(laptop.brand);
+        console.log(laptop.type);
+        console.log(laptop.price);
+    </script>
+</body>
+
+</html>

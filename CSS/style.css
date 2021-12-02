@@ -1,0 +1,232 @@
+h1 {
+    /* color: red; */
+    /*keyword*/
+    /*color: #ff0000;*/
+    /* hex code---> r g b */
+    /*color: #f00; /* short hex code*/
+    color: rgb(255, 0, 0);
+    /* rgb*/
+    text-align: center;
+    text-transform: uppercase;
+}
+
+small {
+    color: green;
+    line-height: 50px;
+    word-spacing: 30px;
+    letter-spacing: 10px;
+}
+
+
+/* universal selector */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* tag selector or element selector */
+
+h4 {
+    color: red;
+    line-height: 40px;
+    text-align: justify;
+    /* adjust the text to justify*/
+}
+
+
+/* attribute selector */
+
+a[title="google"] {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* ID Selector */
+
+#idselector {
+    color: red;
+}
+
+
+/* Class Selector */
+
+.one {
+    color: green;
+    word-spacing: 30px;
+    letter-spacing: 10px;
+}
+
+
+/* Descendent Selector */
+
+.desc a {
+    color: red;
+}
+
+
+/* Child Selector */
+
+.child>a {
+    color: green;
+}
+
+
+/* Pseudo Selector */
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:visited {
+    color: brown;
+}
+
+
+/* Target*/
+
+div:target {
+    color: red;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+
+/* Student Register */
+
+form {
+    width: 80%;
+    /* background-color: red; */
+    margin: auto;
+    /* auto is for placing equally*/
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"]
+/*group selector*/
+
+{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    /*  outline: none; is to disable border when focus*/
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    /* :focus is to happen sth when cursor drops*/
+    border: 3px solid #555;
+}
+
+#dob {
+    width: 90%;
+    /*background-color: red;*/
+}
+
+#dob select {
+    width: 30%;
+    height: 40px;
+}
+
+input[type="radio"]:checked+label {
+    /* :checked + label is used to apply sth when clicking radio box*/
+    color: red;
+    letter-spacing: 10px;
+}
+
+#address {
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:enabled+label {
+    /*:enabled+label means enabled checkbox  when user can click*/
+    color: yellow;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked+label {
+    color: red;
+    font-style: normal;
+}
+
+input[type="checkbox"]:disabled+label {
+    /*:disabled+label means tp apply sth to disabled checkbox*/
+    color: #fff;
+}
+
+ul li {
+    margin-left: 50px;
+    width: 80%;
+    line-height: 40px;
+}
+
+li:first-child {
+    background-color: yellow;
+}
+
+li:last-child {
+    background-color: red;
+}
+
+li:nth-child(3) {
+    background-color: green;
+}
+
+p:empty {
+    /*apply sth to empty tags*/
+    width: 100%;
+    height: 20px;
+    background-color: #607D8B;
+}
+
+.thanku {
+    text-align: center;
+}
+
+
+/* Borders */
+
+.borderone {
+    border: 2px dotted green;
+}
+
+.bordertwo {
+    border-bottom: 5px solid yellow;
+}
+
+.borderstyle {
+    border-style: solid;
+}
+
+.bordermix {
+    border-style: solid dotted dashed double;
+    /* top-right-bottom-left*/
+    /*border-style: solid dotted dashed;
+    <top-Left&Right-Bottom>*/
+    /*border-style: double solid;
+    <top&bottom-Left&Right>*/
+    /*border-style: solid;
+    <All Four Sides>*/
+}
+
+.borderwidth {
+    /* border-width: 3px; */
+    /* border-width: thick; */
+    border-width: 2px 3px;
+    border-style: dotted;
+}

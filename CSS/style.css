@@ -230,3 +230,193 @@ p:empty {
     border-width: 2px 3px;
     border-style: dotted;
 }
+
+
+/* Margin */
+
+.marginone {
+    border: 1px solid black;
+    margin: 15px;
+    /* All four */
+}
+
+.margintwo {
+    border: 1px solid red;
+    margin: 10px 20px;
+}
+
+
+/* padding */
+
+.padding {
+    border: 1px solid black;
+    padding: 40px 70px;
+    /* padding-left: 20px; */
+}
+
+
+/* Layout */
+
+
+/* Inline */
+
+
+/* inline takes only the content's length */
+
+
+/* inline cannot be assign width and height  */
+
+.inline {
+    border: 1px solid red;
+    width: 400px;
+    display: inline-block;
+    /* to have the properties of both inline and black */
+}
+
+
+/* block */
+
+
+/* block takes the whole content area */
+
+
+/* block can be assign width and height  */
+
+.block {
+    border: 1px solid green;
+    width: 400px;
+    height: 50px;
+    display: inline-block;
+}
+
+
+/* Float */
+
+div.floatleft img {
+    width: 40%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+div.floatright img {
+    width: 40%;
+    float: right;
+}
+
+
+/* grid */
+
+.gridOne div,
+.gridTwo div,
+.gridThree div,
+.gridFour div,
+.gridFive div,
+.gridSix div {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.gridOne,
+.gridTwo,
+.gridThree,
+.gridFour,
+.gridFive,
+.gridSix {
+    display: grid;
+    /*setting up this is grid system */
+    grid-template-columns: auto auto auto;
+    /* grid-template-columns: auto 800px auto; */
+    /* auto means equal measures for setting up cols */
+    /* grid-template-rows: auto 600px auto; */
+    /* auto means equal measures for setting up rows */
+}
+
+.gridTwo {
+    grid-column-gap: 50px;
+}
+
+.gridThree {
+    grid-row-gap: 50px;
+}
+
+.gridFour {
+    grid-gap: 40px;
+}
+
+.gridFive .columnadd {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gridSix .rowadd {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+/* position */
+
+
+/* position static is default */
+
+.relative_parent {
+    border: 1px solid black;
+    width: 1000px;
+    height: 700px;
+}
+
+.relative {
+    /* start from uppper consecutive tag */
+    border: 1px solid red;
+    width: 500px;
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
+
+.absolute_parent {
+    /* position: relative; */
+    border: 1px solid yellow;
+    width: 1200px;
+    height: 500px;
+}
+
+.absolute {
+    /* start from start of document */
+    border: 2px solid green;
+    width: 600px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+.fixed {
+    /*fixed where it is assigned*/
+    position: fixed;
+    top: 100px;
+    left: 1000px;
+}
+
+
+/* Online Fonts */
+
+.online_font {
+    font-family: 'Meow Script', cursive;
+}
+
+
+/* Offline Fonts */
+
+@font-face {
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+    font-family: dancing;
+    /* in dancing any names can be assigned */
+}
+
+.offline_font {
+    font-family: dancing;
+}

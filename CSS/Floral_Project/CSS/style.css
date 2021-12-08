@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    src: url(../fonts/Lobster-Regular.ttf);
+    font-family: lobster;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    margin-left: 40px;
+}
+
+.brand_name {
+    margin-top: -55px;
+    margin-left: 90px;
+    font-weight: bold;
+    font-family: lobster;
+    font-size: 20px;
+}
+
+.nav_brand {
+    display: inline-block;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #2f91bc;
+    letter-spacing: 4px;
+    transition-duration: .5s;
+}
+
+.navbar {
+    height: 90px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* background */
+
+.img {
+    width: 100%;
+    height: 550px;
+}
+
+.background_text {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.perfect {
+    font-family: lobster;
+    font-weight: unset;
+    margin-bottom: 30px;
+}
+
+.shop {
+    padding: 10px 20px;
+    color: #2f91bc;
+    border: 1px solid #2f91bc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.shop:hover {
+    color: white;
+    background-color: #2f91bc;
+}
+
+
+/* product */
+
+.header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.divided {
+    max-width: 100px;
+    margin: auto;
+    border: 1px solid #2f91bc;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    grid-gap: 30px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.product_img {
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(224, 187, 38, 0.55);
+}
+
+.red {
+    color: red;
+}
+
+
+/* About  */
+
+.about {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-top: 80px;
+    background-image: url(../images/rose_bg.jpg);
+    color: white;
+}
+
+.about div {
+    padding: 60px 0px;
+}
+
+.divide {
+    max-width: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Packaging  */
+
+.pack_img {
+    float: left;
+    padding-right: 30px;
+}
+
+.pack_img img {
+    border-radius: 20px;
+}
+
+.pack_body {
+    padding-right: 120px;
+}
+
+.pack_body div {
+    margin-top: 40px;
+}
+
+.pack_content {
+    line-height: 25px;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.package {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.package h1 {
+    margin-bottom: 30px;
+}

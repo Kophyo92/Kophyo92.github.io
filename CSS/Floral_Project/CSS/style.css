@@ -50,7 +50,7 @@
 }
 
 .navbar {
-    height: 90px;
+    height: 80px;
 }
 
 .clear {
@@ -151,11 +151,11 @@
 
 .pack_img {
     float: left;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .pack_img img {
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .pack_body {
@@ -170,13 +170,120 @@
     line-height: 25px;
     word-spacing: 5px;
     text-align: justify;
+    margin-top: 5px;
 }
 
 .package {
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 80px;
+    margin-left: 100px;
 }
 
 .package h1 {
     margin-bottom: 30px;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+
+/* Support */
+
+.support_icon p {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.support {
+    background-color: #e2e7e9;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px 0px 30px 30px;
+}
+
+
+/* Footer  */
+
+.footer {
+    height: 230px;
+    background-color: #212529;
+}
+
+.footnav {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 50px 20px 0px;
+}
+
+.designed {
+    color: white;
+    margin-top: 30px;
+}
+
+.socialicon {
+    color: white;
+    display: inline-block;
+    margin: 20px 10px 0px;
+}
+
+
+/* For shop page greeting */
+
+.greet {
+    background-image: url('../images/shop_greet.jpg');
+    width: 100%;
+    height: 80px;
+    padding-top: 60px;
+}
+
+.greet_text {
+    position: absolute;
+    top: 95px;
+    left: 550px;
+    font-family: lobster;
+    color: white;
+    font-weight: 50px;
+    letter-spacing: 5px;
+    word-spacing: 1px;
+}
+
+.greet_text h1 {
+    font-size: 50px;
+}
+
+.greet_text p {
+    font-size: 30px;
+}
+
+
+/* Flower  */
+
+.flower_section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 0px 0px 75px;
+}
+
+.flower_img {
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(245, 214, 91, 0.8);
+}
+
+.flower {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.flower p {
+    padding-top: 10px;
+}
+
+a .flower_img:hover {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 10px 20px rgba(255, 204, 1, 0.9);
 }
